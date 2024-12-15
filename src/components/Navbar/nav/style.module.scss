@@ -1,0 +1,123 @@
+.menu {
+  height: 100vh;
+  background-color: #18191b;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: white;
+  z-index: 20;
+  overflow: hidden;
+  .body {
+    box-sizing: border-box;
+    height: 100%;
+    // padding: 100px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: -90vh;
+      transform: translate(0%, -50%) rotate(100deg);
+      border-radius: 50%;
+      width: 100vh;
+      height: 100vh;
+      border: 1px dashed #5b5b5ba8;
+      .stripe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        transform-origin: 0% 50%;
+        height: 60px;
+        display: flex;
+      }
+      .str1 {
+        transform: translate(0, -50%) rotate(-20deg);
+      }
+      .str2 {
+        transform: translate(0, -50%) rotate(-10deg);
+      }
+      .str4 {
+        transform: translate(0, -50%) rotate(10deg);
+      }
+      .str5 {
+        transform: translate(0, -50%) rotate(20deg);
+      }
+      .first {
+        width: 50%;
+        height: 100%;
+      }
+      .second {
+        width: 50%;
+        height: 100%;
+        padding-left: 2.5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        // background-color: black;
+        h1 {
+          font-size: 40px;
+          color: white;
+        }
+        .smCircle {
+          position: absolute;
+          left: -0.3rem;
+          top: 50%;
+          transform: translate(0, -50%);
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: #e8ff85;
+          opacity: 0.3;
+          border-radius: 50%;
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .circle {
+        left: -70vh;
+        width: 100vh;
+        height: 100vh;
+        .stripe {
+          .second {
+            h1 {
+              font-size: 80px;
+            }
+            .smCircle {
+              width: 0.5vw;
+              height: 0.5vw;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      .circle {
+        left: -100vh;
+        width: 150vh;
+        height: 150vh;
+      }
+    }
+    @media screen and (min-width: 1470px) {
+      .circle {
+        left: -100vh;
+        width: 200vh;
+        height: 200vh;
+      }
+    }
+    .indicator {
+      position: absolute;
+      right: 3%;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 99;
+    }
+  }
+}
