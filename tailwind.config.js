@@ -1,8 +1,4 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -17,7 +13,6 @@ export default {
         "jetbrains-mono": ["JetBrains Mono", "monospace"],
         "bluu-next": ["Bluu Next", "serif"],
         caveat: ["Caveat", "cursive"],
-
       },
     },
   },
