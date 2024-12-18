@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import Project from "./components/project";
 import { motion } from "framer-motion";
 import gsap from "gsap";
-import Rounded from "../common/RoundedButton";
 import {
   faMapLocation,
   faBriefcase,
@@ -14,13 +13,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const projects = [
   {
-    title: "Ndure",
-    url: "https://ndure.com/",
-    src: "c2montreal.png",
+    title: "MoonBox",
+    url: "https://www.moonbox.ae/",
+    src: "moonbox.png",
     color: "#000000",
-    location: "Lahore",
+    location: "Dubai",
     position: "Frontend Engineer",
-    info: "I am a skilled React developer specializing in creating embedded apps for Shopify at Ndure, a leading e-commerce solutions provider. My role involves designing and developing custom applications that seamlessly integrate with Shopify stores, enhancing the overall functionality and user experience.",
+    info: `Worked with several high-profile clients and delivered several projects in collaboration with the other team members. Always exceeded the client's expectations and generated positive feedback which resulted in securing repeat business and enhanced the company's reputation as a trusted service provider in the industry. Worked closely with the UI/UX team in preparing the frontends for multiple different ongoing projects. Developed several responsive web templates including dashboards, e-commerce templates, travel website, recipe website, Food ordering app and an event planner to name a few. Utilized HTML, CSS, JavaScript, and React to develop user interfaces and implement features in accordance with design specifications. Conducted code reviews and offered constructive feedback to team members, ensuring code quality and adherence to best practices.`,
     id: 1,
     duration: "December 2023 - Present",
   },
