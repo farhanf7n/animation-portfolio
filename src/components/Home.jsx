@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { Badge } from "../components/ui/badge";
 import { useInView } from "framer-motion";
 import { ScrollTrigger } from "gsap/all";
-import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { Icons } from "../components/common/icons";
 import { lineWobble } from "ldrs";
 
@@ -119,7 +118,11 @@ function Home() {
         <section>
           <div className="flex justify-center h-screen items-center flex-col gap-8 md:pt-0 pt-20">
             <div className="relative rounded-full w-56 h-56">
-              <AnimatedTooltip items={profileData} />
+              <img
+                src={profileData[0].image}
+                alt={profileData[0].name}
+                className="object-cover !m-0 !p-0 object-top rounded-full h-56 w-56 border-2 group-hover:scale-105 group-hover:z-30 border-lime-400 relative transition duration-500"
+              />
             </div>
             <div className="text-center">
               <h1 className="text-5xl md:text-8xl font-semibold mt-4 select-none font-bluu-next">

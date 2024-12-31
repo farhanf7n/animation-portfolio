@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
+import ShadowText from "./common/Animation/ShadowText";
 import {
   faReact,
   faHtml5,
@@ -14,12 +16,9 @@ import {
   faSass,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
-import CustomHook from "./CustomHook";
 
 function Skills() {
   const divs = useRef([]);
-  const scrollTab = useRef();
-  CustomHook(scrollTab, divs);
   const [listSkills] = useState([
     {
       name: "HTML",
@@ -82,24 +81,47 @@ function Skills() {
       icon: faGithub,
     },
   ]);
+
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (key) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * key,
+      },
+    }),
+  };
   return (
-    <section className="skills my-20 md:my-48" ref={scrollTab} id="skills">
-      <div
-        className="title font-bluu-next"
-        ref={(el) => el && divs.current.push(el)}
-      ></div>
-      <div className="des mx-auto" ref={(el) => el && divs.current.push(el)}>
-        {/* 20 */}
+    <section className="skills my-20 md:my-48" id="skills">
+      <div className="title font-bluu-next"></div>
+      <div className="des mx-auto">{/* 20 */}</div>
+      <div>
+        <ShadowText
+          className="text-center"
+          paragraph={
+            "I create UI designs, then code them, simplifying problems with my hands' magic and creativity. Where the magic happens:"
+          }
+        />
       </div>
       <div className="list flex w-full flex-wrap justify-between gap-10 px-5 sm:justify-center sm:px-0 lg:justify-between">
         {listSkills.map((value, key) => (
-          <div
+          <motion.div
             className={"item "}
             key={key}
-            ref={(el) => el && divs.current.push(el)}
+            variants={fadeInAnimationVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={key}
           >
             <FontAwesomeIcon className="text-5xl" icon={value.icon} />
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

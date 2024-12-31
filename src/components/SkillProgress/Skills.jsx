@@ -100,7 +100,7 @@ const Skills = () => {
                 <div className="flex items-center">
                   <div>
                     <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium">
-                      Creative & experienced <br className="hidden md:block" />{" "}
+                      Dedicated & Experienced <br className="hidden md:block" />{" "}
                       <span className="text-lime-400">Frontend Developer</span>
                     </h1>
                     <div className="flex flex-col">
@@ -143,7 +143,10 @@ const Skills = () => {
                 </div>
                 <div className="flex justify-start flex-col items-start md:flex">
                   <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium">
-                    Tools I <span className="text-lime-400">use</span>
+                    Tools That{" "}
+                    <span className="text-lime-400">
+                      Power <br className="hidden md:block" /> My Work
+                    </span>
                   </h1>
                   <div className="h-[400px] mt-8 md:mt-10 overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
                     <IntegrationsColumn integrations={integrations} />
@@ -171,65 +174,50 @@ const Skills = () => {
                   <h1 className="text-3xl md:text-6xl font-bold text-[#18191b]">
                     About me
                   </h1>
-                  <h1 className="md:text-3xl lg:text-6xl font-medium text-[#18191b] mt-6 xl:mt-10">
-                    I build bridge between <br /> companies and customers
-                  </h1>
                   <h1 className="md:text-xl xl:text-4xl text-[#18191b] mt-6 xl:mt-10">
                     "I help companies from all over the world with tailor-made
-                    solutions. With each project, I push my work to new
-                    horizons, always putting quality first. "
+                    solutions. <br className="hidden md:block" /> With each
+                    project, I push my work to new horizons, always putting
+                    quality first. "
                   </h1>
                 </div>
                 <div className="mt-6">
                   <div>
                     <h1 className="text-3xl md:text-6xl font-bold text-[#18191b] mb-6">
-                      I can help you with
+                      Here&apos;s what you can expect from me...
                     </h1>
                   </div>
-                  <div className="grid md:grid-cols-3 gap-6 text-[#18191b] mt-6 xl:mt-10">
-                    <div>
-                      <div className="bg-[#18191b] w-full h-1.5 rounded-full mb-3"></div>
-                      <h1 className=" text-lg">
-                        01. <br />{" "}
+                  <div className="grid md:grid-cols-2 gap-6 text-[#18191b] mt-6 xl:mt-10">
+                    <div className="bg-[#ffcc24] p-16 rounded-lg">
+                      <h1 className="text-lg">
                         <span className="text-2xl lg:text-3xl font-medium">
-                          Design
+                          Creating beautiful interface and inspired user
+                          experience
                         </span>
                       </h1>
-                      <p className="md:mt-6 lg:text-base md:line-clamp-none line-clamp-2">
-                        With a solid track record in designing websites and
-                        apps, I deliver strong and user-friendly digital
-                        designs. Solid company branding is the foundation of any
-                        succesful website.
-                      </p>
                     </div>
-                    <div>
-                      <div className="bg-[#18191b] w-full h-1.5 rounded-full mb-3"></div>
+                    <div className="bg-[#8ad8c0] p-16 rounded-lg">
                       <h1 className=" text-lg">
-                        02. <br />
                         <span className="text-2xl lg:text-3xl font-medium">
-                          Development
+                          I&apos;ll bring colour, big energy and fresh thinking.
                         </span>
                       </h1>
-                      <p className="md:mt-6 lg:text-base md:line-clamp-none line-clamp-2">
-                        I build scalable websites from scratch that fit
-                        seamlessly with design. My focus is on micro animations,
-                        transitions and interaction.
-                      </p>
                     </div>
-                    <div className="">
-                      <div className="bg-[#18191b] w-full h-1.5 rounded-full mb-3"></div>
+                    <div className="bg-[#ffa727] p-16 rounded-lg">
                       <h1 className=" text-lg">
-                        03. <br />
                         <span className="text-2xl lg:text-3xl font-medium">
-                          The full package
+                          Bridge the gap between creative and commercial
+                          objectives
                         </span>
                       </h1>
-                      <p className="md:mt-6 lg:text-base md:line-clamp-none line-clamp-2">
-                        A complete website from concept to implementation,
-                        that's what makes me stand out. My great sense for
-                        design and my development skills enable me to create
-                        kick-ass projects.
-                      </p>
+                    </div>
+                    <div className="bg-[#ff894f] p-16 rounded-lg">
+                      <h1 className=" text-lg">
+                        <span className="text-2xl lg:text-3xl font-medium">
+                          Teach teams to move at velocity and have a of a lot of
+                          fun.
+                        </span>
+                      </h1>
                     </div>
                   </div>
                 </div>

@@ -26,7 +26,7 @@ export default function IntegrationColumn(props) {
           {integrations.map((integration) => (
             <div
               key={integration.name}
-              className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
+              className="bg-neutral-900 border border-[#a3e635] rounded-3xl p-6"
             >
               <div className="flex justify-center">
                 <img

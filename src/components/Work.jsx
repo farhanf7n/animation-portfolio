@@ -1,11 +1,5 @@
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React, { useEffect, useRef } from "react";
-import {
-  faMapLocation,
-  faBriefcase,
-  faLaptopCode,
-  faCalendar,
-} from "@fortawesome/free-solid-svg-icons";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 

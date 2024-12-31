@@ -1,0 +1,64 @@
+[
+    {
+        "id": "moonbox",
+        "company": "MOONBOX",
+        "companyFull": "MOONBOX",
+        "website": "https://www.moonbox.ae/",
+        "position": "Frontend Developer",
+        "startDate": "2023-01",
+        "endDate": "2023-10",
+        "accomplished": [
+            "Worked closely with the UI/UX team in preparing the frontends for multiple different ongoing projects.",
+            "Developed several responsive web templates including dashboards, e-commerce templates, travel website, recipe website, Food ordering app and an event planner to name a few.",
+            "Revamped entire website leveraging Webflow's no-code features.",
+            "Utilized HTML, CSS, JavaScript, and React to develop user interfaces and implement features in accordance with design specifications.",
+            "Conducted code reviews and offered constructive feedback to team members, ensuring code quality and adherence to best practices."
+        ],
+        "defaultActive": true
+    },
+    {
+        "id": "codeavour",
+        "company": "CODEAVOUR",
+        "companyFull": "CODEAVOUR",
+        "website": "https://codeavour.com/",
+        "position": "Frontend Developer",
+        "startDate": "2021-12",
+        "endDate": "2022-12",
+        "accomplished": [
+            "Converting Figma/ XD/ Photoshop designs to code.",
+            "Worked on the frontend of a high traffic travel website using React to showcase popular travel destinations and itineraries.",
+            "Designed an e-commerce platform using React to provide users with a seamless shopping experience. Integrated shopping cart functionality and product categories for easy navigation.",
+            "Participated in code reviews.",
+            "Worked on an internal Back-Office application used to manage clients, meetings, leads and reports.",
+            "Getting feedback from clients and incorporating that."
+        ]
+    },
+    {
+        "id": "career-institute",
+        "company": "CAREER INSTITUTE",
+        "companyFull": "CAREER INSTITUTE",
+        "website": "https://iedea.com",
+        "position": "Frontend Developer",
+        "startDate": "2020-06",
+        "endDate": "2021-12",
+        "accomplished": [
+            "Maintaining the frontend of the institute's main website.",
+            "Making frontend templates using HTML/CSS and JavaScript. Created almost ~50 frontend templates.",
+            "Helped create starter kits for frontend (Bootstrap).",
+            "Meeting with clients to gather the requirements, get feedback on the templates."
+        ]
+    },
+    {
+        "id": "digital-softs",
+        "company": "DIGITAL SOFTS",
+        "companyFull": "DIGITAL SOFTS",
+        "website": "https://www.digitalsofts.com/",
+        "position": "Web Developer",
+        "startDate": "2019-01",
+        "endDate": "2020-05",
+        "accomplished": [
+            "Digital Softs used to deliver desktop and web applications in several domains including Retail, Supply Chain, Manufacturing, Hospitality and Education.",
+            "I joined the team working on the web application of their product and developed the frontend part which included several modules including accounts, finance, reporting, product and asset management etc."
+        ]
+    }
+]

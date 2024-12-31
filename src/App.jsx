@@ -15,7 +15,7 @@ import Preloader from "./components/Preloader";
 import { setisLoading } from "./redux/features/GlobalSlice";
 import SkillProgress from "./components/SkillProgress";
 import BackgroundBeams from "./components/ui/background-beams";
-
+import TimelineDemo from "./components/TimelineDemo";
 function App() {
   const isLoading = useSelector((state) => state.GlobalReducer.isLoading);
   const dispatch = useDispatch();
@@ -49,6 +49,7 @@ function App() {
       <SkillProgress />
       <Projects />
       <Work />
+      <TimelineDemo />
       <MarqueeClients />
       <Contacts />
     </>
