@@ -138,7 +138,9 @@ export default function Home() {
       }}
       className={styles.projects}
     >
-      <div className="title mb-20">Work Experince</div>
+      <div className="title pt-24 mb-20 font-bold font-bluu-next uppercase">
+        &lt;work/&gt; Experince
+      </div>
       <div className={styles.body}>
         {projects.map((project, index) => {
           return (
@@ -172,7 +174,6 @@ export default function Home() {
                     style={{ backgroundColor: color }}
                     key={`modal_${index}`}
                   >
-                    {/* <img src={`/${src}`} width={300} height={0} alt="image" /> */}
                     <div className="p-4 space-y-3">
                       <div className="flex justify-start items-center gap-4">
                         <div className="work-info-icon">

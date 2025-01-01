@@ -42,7 +42,7 @@ export default Work;
 const Card = ({ card, index }) => {
   return (
     <div
-      className="bg-[#122625b2] backdrop-blur-[50px] rounded-xl p-5 w-[400px] card"
+      className="bg-[#122625b2] backdrop-blur-[50px] rounded-xl p-5 w-[650px] card"
       key={index}
     >
       <div>
