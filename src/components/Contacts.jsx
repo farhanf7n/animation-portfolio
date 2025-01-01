@@ -74,7 +74,7 @@ function Contacts() {
     const templateParams = {
       from_name: values.name,
       from_email: values.email,
-      to_name: "Ali Shan",
+      to_name: "Farhan Ahmed",
       service: values.service,
       message: values.message,
     };
@@ -83,10 +83,10 @@ function Contacts() {
       setFormError(false);
       emailjs
         .send(
-          "service_a3fro77",
-          "template_0lfao4w",
+          "service_dgtx6bf",
+          "template_8z395hm",
           templateParams,
-          "tQMyEsQyFqQa1sve5"
+          "lJUdaQcvYFSLADE26"
         )
         .then((response) => {
           console.log("Email sent Successfully..!", response);
@@ -119,21 +119,13 @@ function Contacts() {
   };
 
   return (
-    <section className="contacts" ref={scrollTab} id="contact">
+    <section className="contacts py-24" ref={scrollTab} id="contact">
       <div
-        className="title text-center"
+        className="title text-center font-bluu-next uppercase"
         ref={(el) => el && divs.current.push(el)}
       >
-        Let's start a project together
+        Let's &lt;Connect!/&gt;
       </div>
-      {/* <div className="list" ref={(el) => el && divs.current.push(el)}>
-        {listContacts.map((value, key) => (
-          <div className="item" key={key}>
-            <h3>{value.title}</h3>
-            <div>{value.value}</div>
-          </div>
-        ))}
-      </div> */}
       <div
         className="grid md:grid-cols-3 gap-4 mt-6 md:my-20"
         ref={(el) => el && divs.current.push(el)}
@@ -146,14 +138,14 @@ function Contacts() {
               </div>
               <div className="px-6 flex flex-col flex-1">
                 <label htmlFor="name" className="text-2xl text-white">
-                  What's your name?
+                  What&apos;s your name?
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   onChange={handleChange}
-                  className="bg-transparent outline-none border-none py-4 w-full text-2xl placeholder:opacity-50"
+                  className="bg-transparent  outline-none border-none py-4 w-full text-2xl placeholder:opacity-50"
                   placeholder="Jhone Doe"
                   value={values.name}
                 />
@@ -209,7 +201,7 @@ function Contacts() {
                   id="message"
                   name="message"
                   className="bg-transparent outline-none border-none py-4 w-full text-2xl placeholder:opacity-50"
-                  placeholder="Hi Ali, I'm looking for a web developer..."
+                  placeholder="Hi Farhan, I'm looking for a web developer..."
                   rows="5"
                   onChange={handleChange}
                   value={values.message}
@@ -226,9 +218,13 @@ function Contacts() {
             <button type="submit" className="group py-6 max-w-sm mx-auto mt-6">
               <RoundedBtn>
                 {!loading ? (
-                  <p className="group-hover:text-black text-4xl">Send it!</p>
+                  <p className="text-lime-accent group-hover:text-black text-4xl">
+                    Send it!
+                  </p>
                 ) : (
-                  <p className="group-hover:text-black text-4xl">Loading...</p>
+                  <p className="text-lime-accent group-hover:text-black text-4xl">
+                    Loading...
+                  </p>
                 )}
               </RoundedBtn>
             </button>
@@ -237,7 +233,7 @@ function Contacts() {
         <div>
           <Magnetic>
             <img
-              className="rounded-full w-20 md:w-40"
+              className="rounded-full w-20 md:w-40 md:h-40 object-cover"
               src="/avatar.jpg"
               alt=""
               ref={(el) => el && divs.current.push(el)}
@@ -252,26 +248,18 @@ function Contacts() {
               <h1 className="capitalize mb-2 text-2xl">CONTACT DETAILS</h1>
               <Magnetic>
                 <a
-                  href="mailto:alixhan5500@gmail.com"
+                  href="mailto:farhanf7n@gmail.com"
                   className="hover:underline text-xl opacity-65"
                 >
-                  alixhan5500@gmail.com
+                  farhanf7n@gmail.com
                 </a>
               </Magnetic>
               <Magnetic>
                 <a
-                  href="tel:+923443926496"
+                  href="tel:+923091789249"
                   className="hover:underline text-xl opacity-65"
                 >
-                  +923443926496
-                </a>
-              </Magnetic>
-              <Magnetic>
-                <a
-                  href="tel:+923317433036"
-                  className="hover:underline text-xl opacity-65"
-                >
-                  +923317433036
+                  +923091789249
                 </a>
               </Magnetic>
             </div>
@@ -281,26 +269,10 @@ function Contacts() {
               <h1 className="capitalize mb-2 text-2xl">Social Links</h1>
               <Magnetic>
                 <a
-                  href="https://www.linkedin.com/in/ali-shan-00b16a204"
+                  href="https://www.linkedin.com/in/farhanf7n/"
                   className="hover:underline text-xl opacity-65"
                 >
                   LinkedIn
-                </a>
-              </Magnetic>
-              <Magnetic>
-                <a
-                  href="https://www.facebook.com/people/Ali-Xhan/pfbid0hBycMzkoJBvXNy6LPTEEaFr1Whm6muTfcJpweLqaeL69SJuDGh73SrPn8YxFVGnhl/"
-                  className="hover:underline text-xl opacity-65"
-                >
-                  Facebook
-                </a>
-              </Magnetic>
-              <Magnetic>
-                <a
-                  href="https://www.instagram.com/ali_xhan/"
-                  className="hover:underline text-xl opacity-65"
-                >
-                  Instagram
                 </a>
               </Magnetic>
             </div>

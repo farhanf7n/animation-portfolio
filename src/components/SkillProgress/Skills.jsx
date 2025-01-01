@@ -172,7 +172,7 @@ const Skills = () => {
               <div className="grid gap-4">
                 <div>
                   <h1 className="text-3xl md:text-6xl font-bold text-[#18191b]">
-                    About me
+                    &lt;About/&gt; Me
                   </h1>
                   <h1 className="md:text-xl xl:text-4xl text-[#18191b] mt-6 xl:mt-10">
                     "I help companies from all over the world with tailor-made
@@ -184,7 +184,7 @@ const Skills = () => {
                 <div className="mt-6">
                   <div>
                     <h1 className="text-3xl md:text-6xl font-bold text-[#18191b] mb-6">
-                      Here&apos;s what you can expect from me...
+                      Here&apos;s what you can &lt;expect from me.../&gt;
                     </h1>
                   </div>
                   <div className="grid md:grid-cols-2 gap-6 text-[#18191b] mt-6 xl:mt-10">

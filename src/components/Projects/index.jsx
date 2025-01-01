@@ -19,20 +19,20 @@ const projects = [
     color: "#000000",
     location: "Dubai",
     position: "Frontend Engineer",
-    info: `Worked with several high-profile clients and delivered several projects in collaboration with the other team members. Always exceeded the client's expectations and generated positive feedback which resulted in securing repeat business and enhanced the company's reputation as a trusted service provider in the industry. Worked closely with the UI/UX team in preparing the frontends for multiple different ongoing projects. Developed several responsive web templates including dashboards, e-commerce templates, travel website, recipe website, Food ordering app and an event planner to name a few. Utilized HTML, CSS, JavaScript, and React to develop user interfaces and implement features in accordance with design specifications. Conducted code reviews and offered constructive feedback to team members, ensuring code quality and adherence to best practices.`,
+    info: `worked closely with the UI/UX team to prepare frontends for multiple ongoing projects, contributing to the development of various responsive web templates, including dashboards, e-commerce sites, travel websites, recipe platforms, food ordering apps, and event planners. Additionally, I played a key role in revamping entire websites using Webflow's no-code features. My technical skills in HTML, CSS, JavaScript, and React allowed me to develop user interfaces and implement features that aligned with design specifications. I also conducted code reviews, providing constructive feedback to team members to ensure high-quality code and adherence to best practices.`,
     id: 1,
-    duration: "December 2023 - Present",
+    duration: "Jan 2023 - Oct 2023",
   },
   {
-    title: "Bwlogics",
+    title: "Codeavour",
     src: "officestudio.png",
-    url: "https://bwlogics.com/",
+    url: "https://codeavour.com/",
     color: "#8C8C8C",
     location: "Lahore",
-    position: "UI Developer",
-    info: "I am a dedicated UI developer at Bwlogics, a dynamic tech company known for its innovative solutions. With a focus on crafting engaging user interfaces, I contribute to creating visually stunning and user-friendly digital experiences for our clients.",
+    position: "Frontend Developer",
+    info: "I was responsible for converting Figma, XD, and Photoshop designs into code, ensuring seamless transitions from design to development. I worked on the frontend of a high-traffic travel website using React, showcasing popular travel destinations and itineraries. Additionally, I designed an e-commerce platform with React, aiming to provide users with a smooth and intuitive shopping experience. I also participated in code reviews, collaborating with the team to maintain code quality. Another key project involved developing an internal back-office application to manage clients, meetings, leads, and reports. Throughout all these projects, I consistently gathered feedback from clients and incorporated it to improve functionality and user experience.",
     id: 2,
-    duration: "April 2022 - November 2023",
+    duration: "Dec 2021 - Dec 2022",
   },
   {
     title: "Career Institute",
@@ -41,20 +41,20 @@ const projects = [
     color: "#01082488",
     location: "Faisalabad",
     position: "Intern - Frontend Developer",
-    info: "Since 2010, Career Institute, a global tech training leader, has impacted 150,000+ students worldwide. As a Frontend Developer Intern at Career Institute, I am passionate about honing my skills in web development and contributing to innovative projects. I bring a strong foundation in HTML, CSS, and JavaScript, eager to learn and grow in a dynamic and collaborative environment.",
+    info: "I was responsible for maintaining the frontend of the institute's main website, ensuring it remained up-to-date and functional. I created approximately 50 frontend templates using HTML, CSS, and JavaScript, providing a solid foundation for various web pages. Additionally, I helped develop starter kits for frontend development, utilizing Bootstrap to streamline the design process. My role also involved meeting with clients to gather requirements and receive feedback on the templates, ensuring that the final designs aligned with their needs and expectations.",
     id: 3,
-    duration: "November 2021 - Feb 2022",
+    duration: "Jun 2020 - Dec 2021",
   },
   {
-    title: "Wapexp",
+    title: "DIGITAL SOFTS",
     src: "silencio.png",
-    url: "https://wapexp.com/",
+    url: "https://www.digitalsofts.com/",
     color: "#706D63",
     location: "Faisalabad",
     position: "Intern - WordPress Developer",
-    info: "WAPEXP is a company for Software Development, Web Development, Graphics designing and SEO which delivers exclusive and finest solutions to the clients being top internet marketing firm. I am a WordPress Developer at Wapexp, a leading digital agency specializing in web development solutions. With expertise in WordPress CMS, I create customized websites and plugins, delivering seamless user experiences and driving online growth for clients.",
+    info: "Digital Softs delivered desktop and web applications across various domains, including retail, supply chain, manufacturing, hospitality, and education. I joined the team working on the web application for one of their products, where I focused on developing the frontend. My work involved building several modules, such as accounts, finance, reporting, and product and asset management, contributing to the overall functionality and user experience of the application.",
     id: 4,
-    duration: "March 2021 - November 2022",
+    duration: "Jan 2019 - May 2020",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function Home() {
       className={styles.projects}
     >
       <div className="title pt-24 mb-20 font-bold font-bluu-next uppercase">
-        &lt;work/&gt; Experince
+        &lt;work/&gt; Experience
       </div>
       <div className={styles.body}>
         {projects.map((project, index) => {

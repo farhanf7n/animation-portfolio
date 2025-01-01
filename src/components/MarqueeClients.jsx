@@ -7,14 +7,17 @@ const MarqueeClients = () => {
   const scrollTab = useRef();
   CustomHook(scrollTab, divs);
   return (
-    <div className="marquee-clients overflow-hidden mt-20" ref={scrollTab}>
-      <h1 className="title mb-8" ref={(el) => el && divs.current.push(el)}>
-        What Clients Say About me
+    <div className="marquee-clients overflow-hidden my-24" ref={scrollTab}>
+      <h1
+        className="title font-bluu-next uppercase mb-16"
+        ref={(el) => el && divs.current.push(el)}
+      >
+        &lt;Words/&gt; from My Clients
       </h1>
-      <div ref={(el) => el && divs.current.push(el)} className="space-y-6">
+      <div ref={(el) => el && divs.current.push(el)}>
         <Marquee fade={true}>
           <div className="bg-[#212225] py-2 px-4 rounded-md flex justify-start items-center gap-3">
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-medium">
               “Beautiful Template + Fantastic Customer service!”
             </p>
             <img
@@ -24,7 +27,7 @@ const MarqueeClients = () => {
             />
           </div>
           <div className="bg-[#212225] py-2 px-4 rounded-md flex justify-start items-center gap-3">
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-medium">
               “Great template and custom service”
             </p>
             <img
@@ -34,7 +37,7 @@ const MarqueeClients = () => {
             />
           </div>
           <div className="bg-[#212225] py-2 px-4 rounded-md flex justify-start items-center gap-3">
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-medium">
               “Fantastic designer and web developer... but above all great
               people”
             </p>
@@ -47,7 +50,7 @@ const MarqueeClients = () => {
         </Marquee>
         <Marquee fade={true} reverse={true}>
           <div className="bg-[#212225] py-2 px-4 rounded-md flex justify-start items-center gap-3">
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-medium">
               “Beautiful Template + Fantastic Customer service!”
             </p>
             <img
@@ -57,7 +60,7 @@ const MarqueeClients = () => {
             />
           </div>
           <div className="bg-[#212225] py-2 px-4 rounded-md flex justify-start items-center gap-3">
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-medium">
               “Great template and custom service”
             </p>
             <img
@@ -67,7 +70,7 @@ const MarqueeClients = () => {
             />
           </div>
           <div className="bg-[#212225] py-2 px-4 rounded-md flex justify-start items-center gap-3">
-            <p className="text-xl font-semibold">
+            <p className="text-xl font-medium">
               “Fantastic designer and web developer... but above all great
               people”
             </p>

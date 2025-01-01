@@ -14,6 +14,9 @@ export default {
         "bluu-next": ["Bluu Next", "serif"],
         caveat: ["Caveat", "cursive"],
       },
+      backgroundImage: {
+        noise: "url('/src/assets/patterns/noise.svg')",
+      },
     },
   },
   plugins: [addVariablesForColors],
