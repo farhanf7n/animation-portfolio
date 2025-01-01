@@ -7,7 +7,6 @@ import Skills from "./components/Skills";
 import Work from "./components/Projects";
 import Contacts from "./components/Contacts";
 import MarqueeClients from "./components/MarqueeClients";
-// import Work from "./components/Work";
 import Projects from "./components/Projects/index";
 import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence } from "framer-motion";
@@ -15,7 +14,6 @@ import Preloader from "./components/Preloader";
 import { setisLoading } from "./redux/features/GlobalSlice";
 import SkillProgress from "./components/SkillProgress";
 import BackgroundBeams from "./components/ui/background-beams";
-import TimelineDemo from "./components/TimelineDemo";
 function App() {
   const isLoading = useSelector((state) => state.GlobalReducer.isLoading);
   const dispatch = useDispatch();
@@ -49,7 +47,6 @@ function App() {
       <SkillProgress />
       <Projects />
       <Work />
-      <TimelineDemo />
       <MarqueeClients />
       <Contacts />
     </>
